@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -16,7 +15,16 @@ function Navbar() {
               <a href="#">About</a>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  window.scrollTo(0, document.body.scrollHeight);
+                }}
+              >
+                End to the Page
+              </a>
             </li>
           </ul>
         </nav>
